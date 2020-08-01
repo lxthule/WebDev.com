@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebDev</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="slide-menu.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="slide-menu.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#extra").load("intro.html");
+            });
+        });
+    </script>
+    <style>
+        body {
+            overflow: scroll;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        .jumbotron {
+            margin-bottom: 0;
+            color: #000e26;
+            background: url('architecture.jpg') no-repeat;
+        }
+
+        #footer {
+            background-color: #000e26;
+            padding: 20px;
+            padding-top: 500px;
+            text-align: center;
+            color: #000;
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+        #div1 {
+            background-color: #000e26;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebDev.com</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="shift">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" onclick="extend()">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Technologies <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#html">Learn HTML 5</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#css">Learn CSS</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#js">Learn JavaScript</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#js">Learn APIs</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" onclick="documentTrack('#');">More+</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="header">
+        <div class="container">
+            <!--html-->
+            <br /><h1 class="h1" id="html">HTML 5</h1><hr> <details align="left"> <summary>Semantic Elements</summary> <h3 class="h3">Header</h3> <p class="card-text">The header tag in HTML is used to define the header for a document or a section. The header tag contains information related to the title and heading of the related content.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="header.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <img src="hcode.jpg" class="responsive"> </div> </div><br> <!--section--> <h3 class="h3">Section</h3> <p class="card-text">The section element defines section in a document.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="section.jpg"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <img src="soutput.jpg" class="responsive"> </div> </div><br> <!--article--> <h3 class="h3">Article</h3> <p class="card-text">The article element specifies independent, self-contained content.<br><br>On the Internet, you will find HTML pages with section elements containing article elements, and article elements containing section elements. You will also find pages with section elements containing section elements, and article elements containing article elements.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="article.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <img src="aoutput.jpg" class="responsive"> </div> </div><br> <!--nav--> <h3 class="h3">Nav</h3> <p class="card-text">The nav used to specify a block of navigation links, either within the current document or to other documents.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="nav.jpg" class="responsive"> </div> <div> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"><nav> <a href="/html/">HTML</a> | <a href="/css/">CSS</a> | <a href="/js/">JavaScript</a> | <a href="/python/">Python</a> </nav></code></pre> </div> </div> <!--form--> <h3 class="h3">Form : <small>This chapter describes all the different HTML form elements.</small></h3><br><br> <p class="card-text">> The <b>input</b> element is one of the most used form elements.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="input.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"> <input type="text" id="firstname" name="firstname"></code></pre> </div> </div><br><br> <p class="card-text">> The <b>select</b> element defines a drop-down list.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="droplist.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"><select id="cars" name="cars"><br><option value="volvo">Volvo</option><br><option value="saab">Saab</option><br><option value="fiat">Fiat</option><br><option value="audi">Audi</option><br></select></code></pre> </div> </div><br><br> <p class="card-text">> The <b>label</b> element used to title an input, textarea and select elements in a form.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="label.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"><input type="checkbox" id="term6s" /><br><label for="terms" class="checkbox"> Check to agree to terms &amp; conditions</label></code></pre> </div> </div><br><br> <p class="card-text">> <b>Textarea</b> element defines a multi-line input field (a text area)</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="textarea.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre><code><label for="review">Comment section:</label> <br><textarea id="review" name="review" rows="4" cols="50" placeholder="leave a comment..."></textarea></code></pre> </div> </div><br><br> <!--aside--> <h3 class="h3">Aside</h3> <p class="card-text">The aside element defines some content aside from the content it is placed in, like a sidebar.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="aside.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <img src="sioutput.jpg" class="responsive"> </div> </div><br> <!--footer--> <h3 class="h3">Footer</h3> <p class="card-text">The footer tag defines a footer for a document or section. A footer element typically contains: <ul><li>Authorship information</li><li>Copyright information</li><li>Contact information</li><li>Sitemap</li><li>Back to top links</li><li>Related documents</li></ul> <br>You can have several footer elements in one document.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="footer.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"> <footer> <div> &copy; Copyright<a href="mailto:lxthule@gmail.com"> Athule Matya 2020</a>. All Rights Reserved</p> </footer></code></pre> </div> </div><br> </details>
+            <details align="left"> <summary>Image, Video & Audio Tags</summary> <h3 class="h3">Image Tag</h3> <p class="card-text">> Image element used to improve the design and the appearance of a web page by using images.</p> <!--image tag--> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="bird_pic.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"> <img src="bird.jpg" alt="bird" width="150" height="200"></code></pre> </div> </div><br> <h3 class="h3">Video Tag</h3> <p class="card-text">> The HTML video element is used to show a video on a web page.</p> <!--video tag--> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="video.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"> <video width="400" height="200" controls> <source src="mov_bbb.mp4" type="video/mp4"> <source src="movie.ogg" type="video/ogg"> Your browser does not support the video tag. </video></code></pre> </div> </div><br> <h3 class="h3">Audio Tag</h3> <p class="card-text">> The HTML audio element is used to play an audio file on a web page.</p> <!--audio tag--> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="audio.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <pre class="language-html"><code class="language-html"> <audio controls> <source src="horse.ogg" type="audio/ogg"> <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio></code></pre> </div> </div><br> </details>
+
+            <details align="left"> <summary>Tables & Lists</summary> <h3 class="h3">Table</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <!--table tag--> <div class="row"> <div class="column"> <h6 style="color:red;">> CODE:</h6> <img src="table.jpg" class="responsive"> </div> <div class="column"> <h6 style="color:green;">> OUTPUT:</h6> <img src="tableOut.jpg" class="responsive"> </div> </div><br> <h3 class="h3">Lists</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <div class="row"> <div class="column"> <h6 style="color:red;">> Ordered List:</h6> <img src="ordered.jpg" class="responsive"> <br /><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered" type="button">> Click to try it out!</a> </div> <div class="column"> <h6 style="color:green;">> Unordered List:</h6> <img src="unordered.jpg" class="responsive"> <br /><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered" type="button">> Click to try it out!</a> </div> </div><br> </details>
+            <details align="left"> <summary>Application Programming Interface (APIs)</summary> <h3 class="h3">Table</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> <h3 class="h3">Lists</h3><img src="lists.jpg" class="responsive"> </details>
+
+            <!--css3-->
+            <br><h1 class="h1" id="css">CSS 3</h1><hr> <details align="left"> <summary id="intro">Intro</summary> <h3 class="h3" id="selectors">Selectors</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> CSS Selectors: these are patterns used to select the element(s) you want to style.</h6> <img src="audio.jpg" class="responsive"><br> <a href="https://www.w3schools.com/cssref/css_selectors.asp" type="button">> Click here for more.</a> </div> </div><br> <h3 class="h3" id="box">Box Model</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> Box Model Diagram:</h6> <img src="box_model.png" width="150" height="150"> <h6>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image above illustrates the box model.</h6> </div> </div><br> <h3 class="h3" id="transform">Transform</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> CSS transform property:</h6> <img src="tranform.jpg" class="responsive"> <h6>The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., html elements.</h6> <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform" type="button">> Click here for more.</a> </div> </div><br> <h3 class="h3" id="borders">Borders</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> CSS borders:</h6> <img src="border.jpg" class="responsive"> <h6>The CSS border properties allow you to specify the style, width, and color of an element's border.</h6> <a href="https://www.w3schools.com/css/css_border.asp" type="button">> Click to find out more on CSS borders.</a> </div> </div><br> <h3 class="h3" id="position">Position</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> CSS Position Property:</h6> <br><img src="position.png" class="responsive"> <h6>The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).</h6> <a href="w3schools.com/css/tryit.asp?filename=trycss_position_static" type="button">> Click to try it out!</a> </div> </div><br> </details>
+            <details align="left"> <summary id="advanced">Advanced</summary> <h3 class="h3" href="#psuedo">Pseudo Elements</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> <h3 class="h3" href="gradient">Gradient</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> <h3 class="h3" href="#media">Media Queries</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> <h3 class="h3" href="#flex">Flexbox</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> <h3 class="h3" href="#grid">Grid</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> <h3 class="h3" href="backgrounds">Backgrounds</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre><code> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> </details>
+
+            <!--js-->
+            <br><h1 class="h1" id="js">JavaScript</h1><hr> <details align="left"> <summary>Selectors, Decisions Structures & Loops</summary> <h3 class="h3">Selectors</h3> <div class="row"> <div class="column"> <h5 style="color:red;">> JS Selectors</h5> <a href="https://www.w3schools.com/w3js/w3js_selectors.asp" type="button">Notes on JS Selectors</a> </div> </div><br> <h3 class="h3">Decisions Structures</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> Decision Structures in JavaScript</h6> <a href="https://www.mindstick.com/blog/11172/decision-making-in-javascript" type="button">Notes on Decision Structures</a> </div> </div><br> <h3 class="h3">Loops</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> JS Loops</h6> <a href="https://www.w3schools.com/js/js_loop_for.asp" type="button">Notes on JS Loops</a> </div> </div><br> </details>
+            <details align="left"> <summary>Objects e.g. Arrays, DOM, etc</summary> <div class="row"> <div class="column"> <h5 style="color:red;">> Arrays</h5> <img href="arrays.jpg" class="responsive"> <h6>JavaScript arrays are used to store multiple values in a single variable.An array is a special variable, which can hold more than one value at a time.</h6> <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_array" type="button">Click to try it out!</a> </div> </div><br> <h3 class="h3">DOM</h3> <div class="row"> <div class="column"> <h6 style="color:red;">> HTML <b>D</b>ocument <b>O</b>bject <b>M</b>odel</h6> <img href="https://www.w3schools.com/js/pic_htmltree.gif" class="responsive"> <h6>> With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</h6> <a href="https://www.w3schools.com/js/js_htmldom.asp" type="button">More on the DOM</a> </div> </div><br> <h3 class="h3">Window</h3> <!--Window--> <div class="row"> <div class="column"> <h6 style="color:red;">> JavaScript Window aka The Browser Object Model(<b>BOM</b>)</h6> <h6>> The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.</h6> <a href="https://www.w3schools.com/js/js_window.asp" type="button">Read more on the BOM.</a> </div> </div><br> </details>
+            <details align="left"> <summary>Form Validation, Events and Event Handling</summary> <h3 class="h3">Form Validation</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> <h3 class="h3">Events and Event Handling</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> </details>
+            <details align="left"> <summary>Application Programming Interface (APIs)</summary> <h3 class="h3">AJAX</h3> <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> <pre class="language-html"><code class="language-html"> <header> <br> <h1>What Does WWF Do?</h1> <br> <p>WWFs mission:</p> <br> </header></code></pre><br> </details>
+
+            <!--jquery-->
+            <br><h1 class="h1" id="jquery">JQuery</h1> <h5><i>> a JavaScript library</i></h5><hr> <details align="left" ;><summary>How to link jquery?</summary><br> <h3 class="h3">Linking JQuery</h3> <div class="row"> <div class="column"> <img src="jquery.jpg" class="responsive"> </div> </div> <h6>> Placed within the head tag or at the bottom of the body tag.</h6><br> <h3 class="h3">Using Google CDN(Content Delivery Network)</h3> <div class="row"> <div class="column"> <img src="googleCDN.jpg" class="responsive"> </div> </div> <h6>> Placed within the head tag or at the bottom of the body tag</h6><br></details>
+            <details align="left"> <summary>JavaScript vs JQuery</summary> <br> <h5 style="color: red;">Finding HTML Element by Id</h5> <div class="row"> <div class="column"> <h6>> JavaScript</h6> <img src="byID.jpg" class="responsive"> </div> <div class="column"> <h6>> JQuery</h6> <img src="biID.jpg" class="responsive"> </div> </div><br> <h5 style="color: red;">Finding HTML Elements by Tag Name</h5> <div class="row"> <div class="column"> <h6>> JavaScript</h6> <img src="byTag.jpg" class="responsive"> </div> <div class="column"> <h6>> JQuery</h6> <img src="biTag.jpg" class="responsive"> </div> </div><br> <h5 style="color: red;">Finding HTML Elements by Class Name</h5> <div class="row"> <div class="column"> <h6>> JavaScript</h6> <img src="byClass.jpg" class="responsive"> </div> <div class="column"> <h6>> JQuery</h6> <img src="biClass.jpg" class="responsive"> </div> </div><br> <h5 style="color: red;">Finding HTML Elements by CSS Selectors</h5> <div class="row"> <div class="column"> <h6>> JavaScript</h6> <img src="byCSS.jpg" class="responsive"> </div> <div class="column"> <h6>> JQuery</h6> <img src="biCSS.jpg" class="responsive"> </div> </div><br> <h5 style="color: red;">Get Text Content</h5> <div class="row"> <div class="column"> <h6>> JavaScript</h6> <img src="getText.jpg" class="responsive"> </div> <div class="column"> <h6>> JQuery</h6> <img src="geText.jpg" class="responsive"> </div> </div><br> <h5 style="color: red;">Set HTML Content</h5> <div class="row"> <div class="column"> <h6>> JavaScript</h6> <img src="setHTML.jpg" class="responsive"> </div> <div class="column"> <h6>> JQuery</h6> <img src="setHTM.jpg"> </div> </div><br> <h5 style="color: red;">Get HTML Content</h5> <div class="row"> <div class="column"> <h6>> JavaScript</h6> <img src="getHTML.jpg" class="responsive"> </div> <div class="column"> <h6>> JQuery</h6> <img src="getHTM.jpg" class="responsive"> </div> </div> </details>
+            <details align="left"> <summary>JQuery AJAX</summary><br> <img src="load.jpg" class="responsive"><br><br><p>><span style="color:red;"> load() method</span> loads data from a server and puts the returned data into the selected element. It is a simple, but powerful AJAX method.</p>  <br><br> <h6>Example: </h6> <img src="loadeg.jpg" class="responsive"> <h6>> The example above selects a div and loads the content into the element.</h6> <h6>> The optional callback parameter specifies a callback function to run when the load() method is completed.</h6> <div> <h6>The callback function can have different parameters:</h6> <ul> <li>responseTxt <h6>- contains the resulting content if the call succeeds</h6></li> <li>statusTxt <h6>- contains the status of the call</h6></li> <li>xhr <h6>- contains the XMLHttpRequest object</h6></li> </ul> </div><br> <h6>Example: </h6> <img src="ajax.jpg" class="responsive"> </details>
+            <details align="left"> <summary>JQuery Effects</summary> <p class="card-text"><div class="row"> <div class="column"> <h6 style="color:red;">> jQuery Effect Methods</h6> <a href="https://www.w3schools.com/jquery/jquery_ref_effects.asp" type="button">Notes on JQuery Effect Methods</a> </div> </div></p> </details>
+        </div>
+    </div>
+
+
+    <div class="menu-btn"> 
+        <a onclick="documentTrack('#');" href="#">Course! <i class="fa fa-chevron-down"></i></a>
+    </div>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="h1">Welcome To WebDev</h1>
+            <p>become a professional Web Developer.</p>
+            <button id="sticky" class="btn btn-danger" type="button" onclick="extend()"> basics</button>
+        </div>
+    </div>
+    <div id="extra">
+        <div class="container text-muted" id="notes"></div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Athule Matya</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script>
+        function extend() {
+            let btn = document.getElementById('notes');
+
+            let main = '<div id="div1" class="container"> <h1 class="h1" style="color: green;">HTML 5</h1><hr> <h2>HyperText Markup Language 5</h2> <p> the standard markup language for creating Web pages.</p> </div> <br> <div id="div1" class="container"> <h1 class="h1" style="color: orange;">CSS3</h1><hr> <h2>Cascading Style Sheet 3</h2> <p> a simple mechanism for adding style to Web pages.</p> </div> <br> <div id="div1" class="container"> <h1 class="h1" style="color: blue;">JS</h1><hr> <h2>JavaScript</h2> <p> language that adds interactivity to Websites.</p> </div>';
+
+            btn.innerHTML = main;
+        }
+    </script>
+
+</body>
+</html>
